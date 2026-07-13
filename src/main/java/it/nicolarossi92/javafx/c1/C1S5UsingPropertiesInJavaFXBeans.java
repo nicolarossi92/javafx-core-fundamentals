@@ -92,6 +92,11 @@ public class C1S5UsingPropertiesInJavaFXBeans {
 
     }
 
+    /**
+     * Utility methods for printing a generic property (both read only and read/write, since {@link ReadOnlyProperty} is
+     * implemented by both kind of Properties). It prints the name, the value, the bean referenced by that property
+     * @param p the property
+     */
     public static void printDetails(ReadOnlyProperty<?> p){
         String name = p.getName();
         Object value = p.getValue();
